@@ -345,31 +345,99 @@
         }
 
         /* Footer */
-        footer {
-            background: #2c3e50;
+        .site-footer {
+            background: linear-gradient(135deg, #0f2430 0%, #122a33 100%);
             color: white;
-            padding: 40px 30px;
-            text-align: center;
+            padding: 50px 30px;
             margin-top: 60px;
         }
 
-        footer p {
-            margin-bottom: 10px;
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
         }
 
-        .contact-info {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        .footer-section {
+            display: flex;
+            flex-direction: column;
         }
 
-        .contact-info a {
+        .footer-branding {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            height: 60px;
+            width: auto;
+        }
+
+        .footer-branding div h3 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .footer-branding div p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
             color: #a8d5ff;
             text-decoration: none;
+            transition: color 0.3s;
         }
 
-        .contact-info a:hover {
-            text-decoration: underline;
+        .footer-section a:hover {
+            color: #ffffff;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .text-small {
+            font-size: 0.85em;
+            opacity: 0.85;
+        }
+
+        .footer-divider {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .footer-bottom p {
+            margin: 0;
         }
 
         @media (max-width: 768px) {
@@ -496,10 +564,35 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Marseille Simulation. Tous droits réservés.</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-branding">
+                <img src="images/logomsblanc.png" alt="Logo MS" class="footer-logo">
+                <div>
+                    <h3>Marseille Simulation</h3>
+                    <p>Plateforme de missions administratives et techniques</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#missions">Missions</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Nous contacter</h4>
+                <p><strong>Discord :</strong> @alexismcn</p>
+                <p class="text-small">Alexis Mancini — Directeur général / DRH</p>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <p>© 2025 Marseille Simulation — Équipe SOTA</p>
         </div>
     </footer>
 </body>
 </html>
+
