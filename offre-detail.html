@@ -56,6 +56,19 @@
             font-weight: 700;
         }
 
+        nav .logo .brand {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.05;
+        }
+
+        nav .logo .subtitle {
+            font-size: 0.85rem;
+            color: #6b6b6b;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -388,7 +401,10 @@
         <div class="container">
             <a href="index.html" class="logo">
                 <img src="images/logomsbleu.png" alt="Logo Marseille Simulation">
-                <h2>Marseille Simulation</h2>
+                <div class="brand">
+                    <h2>Marseille Simulation</h2>
+                    <span class="subtitle">Plateforme SOTA</span>
+                </div>
             </a>
             <ul>
                 <li><a href="index.html#missions">Missions</a></li>
