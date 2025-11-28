@@ -2,18 +2,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const offers = [
         {
-            id: 1,
-            title: "Création d'une interface connectée à Google Sheet",
-            date: new Date('2025-11-19T13:00:00').toISOString(),
-            description: "Créer une interface permettant d'afficher, consulter et gérer en temps réel les formulaires de candidature enregistrés dans une Google Sheet, dans le cadre de la refonte du pôle RH.",
-            skills: ['Google Sheets','API','No-code / low-code','Intégration'],
-            location: 'Télétravail',
-            type: 'Mission Temporaire',
-            category: 'Technique',
-            remote: true,
-            url: 'offre-detail.html'
-        },
-        {
             id: 2,
             title: 'Recrutement : Membres motivés pour réorganisation administrative',
             date: new Date('2025-11-19T00:00:00').toISOString(),
@@ -24,6 +12,18 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Administratif',
             remote: true,
             url: 'offre-admin.html'
+        },
+        {
+            id: 3,
+            title: "Directeur de Pôle Sapeurs-Pompiers (SDIS 13)",
+            date: new Date('2025-11-28T12:00:00').toISOString(),
+            description: "Direction et développement du Pôle Sapeurs-Pompiers (SDIS 13) : management des effectifs, rédaction et mise à jour des procédures opérationnelles, organisation des sessions et montée en compétence des équipes.",
+            skills: ['Management','Rédaction','Recrutement','Simulation secours','Leadership'],
+            location: 'Télétravail',
+            type: 'Permanent',
+            category: 'Direction',
+            remote: true,
+            url: 'offre-sdis13.html'
         }
     ];
     const state = { filtered: offers.slice(), page: 0, pageSize: 100 };
@@ -149,3 +149,4 @@ document.addEventListener('DOMContentLoaded', function () {
         return out;
     }
 });
+
