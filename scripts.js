@@ -1,4 +1,4 @@
-// scripts.js — gère l'affichage des offres, filtres et pagination
+// scripts.js — gère l'affichage. des offres, filtres et pagination
 document.addEventListener('DOMContentLoaded', function () {
     const offers = [
         {
