@@ -1,4 +1,4 @@
-// scripts.js — gère l'affichage. des offres, filtres et pagination
+// scripts.js — gère l'affichage des offres, filtres et pagination
 document.addEventListener('DOMContentLoaded', function () {
     const offers = [
         {
@@ -24,6 +24,18 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Direction',
             remote: true,
             url: 'offre-sdis13.html'
+        },
+        {
+            id: 4,
+            title: "Refonte graphique : Logos et bannières des pôles",
+            date: new Date('2025-11-29T10:00:00').toISOString(),
+            description: "Refaire les logos spéciaux et les bannières des différents pôles du serveur Marseille Simulation pour moderniser l'identité visuelle et renforcer la cohérence graphique.",
+            skills: ['Design graphique','Figma / Adobe','Créativité','Identité visuelle','Logo design'],
+            location: 'Télétravail',
+            type: 'Mission Temporaire',
+            category: 'Design',
+            remote: true,
+            url: 'offre-logos.html'
         }
     ];
     const state = { filtered: offers.slice(), page: 0, pageSize: 100 };
@@ -149,4 +161,3 @@ document.addEventListener('DOMContentLoaded', function () {
         return out;
     }
 });
-
